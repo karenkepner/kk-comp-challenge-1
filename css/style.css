@@ -1,6 +1,6 @@
 body {
 	box-sizing: border-box;
-	max-width: 900px;
+	/*max-width: 900px;*/
 }
 
 main {
@@ -16,18 +16,24 @@ main {
 
 #intro {
 	background-color: #000;
+	padding: 20px;
 	min-width: 400px;
 	height: 200px;
 }
 
+article a {
+	text-decoration: none;
+	color: white;
+	padding-top: 20px;
+}
+
 .box {
-	width: 30%;
+	width: 33.333%;
 	text-align: center;
-	/*height: 30%;*/
-	/*min-width: 200px;*/
+	padding-top: 50px;
+	min-width: 200px;
 	min-height: 200px;
 	background-color: orange;
-	border: 1px solid #FFF;
 }
 
 .box h4 {
@@ -56,8 +62,6 @@ main {
 .box7 {
 	background-color: red;
 }
-
-
 
 .photo-slider {
 	width: 20%;
