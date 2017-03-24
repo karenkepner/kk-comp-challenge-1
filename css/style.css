@@ -1,0 +1,62 @@
+body {
+	box-sizing: border-box;
+	max-width: 900px;
+}
+
+main {
+	display: flex;
+	width: 100%;
+}
+
+.content-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+#intro {
+	background-color: #000;
+	min-width: 400px;
+	height: 200px;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	min-width: 200px;
+	min-height: 200px;
+	background-color: orange;
+	border: 1px solid #FFF;
+}
+
+.box1 {
+	background-color: blue;
+}
+
+.box2,
+.box6 {
+	background-color: purple;
+}
+
+.box3 {
+	background-color: green;
+}
+
+.box4,
+#intro {
+	background-color: yellow;
+}
+
+.box5,
+.box7 {
+	background-color: red;
+}
+
+
+
+.photo-slider {
+	width: 20%;
+	/*width: 300px;*/
+	background: url(../images/profile-photo.jpg) no-repeat;
+	background-size: cover;
+}
