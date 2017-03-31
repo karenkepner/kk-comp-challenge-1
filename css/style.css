@@ -23,6 +23,23 @@ main {
 	background-color: #000;
 }
 
+#intro button {
+	box-sizing: border-box;
+	padding: 10px 15px;
+	background-color: transparent;
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+
+#intro button:hover {
+	background-color: #242331;
+
+}
+
+#intro img {
+	width: 20px;
+}
+
 article a {
 	padding-top: 20px;
 	text-decoration: none;
@@ -68,6 +85,28 @@ article a {
 .photo-slider {
 	width: 40%;
 	min-width: 250px;
+	height: 100vh;
 	background: url(../images/profile-photo.jpg) no-repeat;
 	background-size: cover;
+}
+
+.arrows {
+	display: flex;
+	justify-content: space-between;
+	width: 96%;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.chevron {
+	width: 30px;
+}
+
+.elipsis {
+	float: right;
+	padding-right: 15px;
+}
+
+.elipsis img {
+	width: 50px;
 }
