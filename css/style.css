@@ -19,7 +19,7 @@ main {
 	flex: 2 0 66.66666%;
 	min-height: 150px;
 	min-width: 150px;
-	padding: 20px;
+	padding: 0 20px;
 	background-color: #000;
 }
 
@@ -27,7 +27,7 @@ main {
 	box-sizing: border-box;
 	padding: 10px 15px;
 	background-color: transparent;
-	border: 1px solid #FFF;
+	border: 2px solid #FFF;
 	color: #FFF;
 }
 
@@ -63,13 +63,26 @@ article a {
 	background-color: #242331;
 }
 
+.box1:hover {
+	background-color: #EDC42F;
+}
+
 .box2,
 .box6 {
 	background-color: #123D18;
 }
 
+.box2:hover,
+.box6:hover {
+	background-color: #A27035;
+}
+
 .box3 {
 	background-color: #533E2D;
+}
+
+.box3:hover {
+	background-color: #EDC42F;
 }
 
 .box4,
@@ -77,9 +90,19 @@ article a {
 	background-color: #A27035;
 }
 
+.box4:hover,
+#intro:hover {
+	background-color: #123D18;
+}
+
 .box5,
 .box7 {
 	background-color: #EDC42F;
+}
+
+.box5:hover,
+.box7:hover {
+	background-color: #242331;
 }
 
 .photo-slider {
