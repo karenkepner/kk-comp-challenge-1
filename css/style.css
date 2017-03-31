@@ -1,4 +1,4 @@
-body {
+* {
 	box-sizing: border-box;
 	/*max-width: 900px;*/
 }
@@ -11,29 +11,31 @@ main {
 .content-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	width: 80%;
+	height: 100vh;
+	width: 60%;
 }
 
 #intro {
-	background-color: #000;
+	flex: 2 0 66.66666%;
+	min-height: 150px;
+	min-width: 150px;
 	padding: 20px;
-	min-width: 400px;
-	height: 200px;
+	background-color: #000;
 }
 
 article a {
+	padding-top: 20px;
 	text-decoration: none;
 	color: white;
-	padding-top: 20px;
 }
 
 .box {
-	width: 33.333%;
+	flex: 1 0 33.333333%;
 	text-align: center;
-	padding-top: 50px;
-	min-width: 200px;
-	min-height: 200px;
-	background-color: orange;
+	min-height: 150px;
+	min-width: 150px;
+	padding-top: 60px;
+	background-color: #EDC42F;
 }
 
 .box h4 {
@@ -41,31 +43,31 @@ article a {
 }
 
 .box1 {
-	background-color: blue;
+	background-color: #242331;
 }
 
 .box2,
 .box6 {
-	background-color: purple;
+	background-color: #123D18;
 }
 
 .box3 {
-	background-color: green;
+	background-color: #533E2D;
 }
 
 .box4,
 #intro {
-	background-color: yellow;
+	background-color: #A27035;
 }
 
 .box5,
 .box7 {
-	background-color: red;
+	background-color: #EDC42F;
 }
 
 .photo-slider {
-	width: 20%;
-	/*width: 250px;*/
+	width: 40%;
+	min-width: 250px;
 	background: url(../images/profile-photo.jpg) no-repeat;
 	background-size: cover;
 }
