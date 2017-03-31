@@ -20,6 +20,7 @@ main {
 .content-wrapper h2 {
 	font-family: 'Great Vibes', cursive;
 	font-size: 2.5em;
+	margin-bottom: 0;
 }
 
 #intro {
@@ -61,55 +62,50 @@ article a {
 	background-color: #EDC42F;
 }
 
+#intro:hover,
+.box:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
 .box h4 {
 	margin: auto;
 }
 
 .box1 {
-	background-color: #242331;
-}
-
-.box1:hover {
-	background-color: #EDC42F;
+	background-color: #24242A;
 }
 
 .box2,
 .box6 {
-	background-color: #123D18;
-}
-
-.box2:hover,
-.box6:hover {
-	background-color: #A27035;
+	background-color: #203423;
 }
 
 .box3 {
-	background-color: #533E2D;
-}
-
-.box3:hover {
-	background-color: #EDC42F;
+	background-color: #4A4039;
 }
 
 .box4,
 #intro {
-	background-color: #A27035;
-}
-
-.box4:hover,
-#intro:hover {
-	background-color: #123D18;
+	background-color: #8B745A;
 }
 
 .box5,
 .box7 {
-	background-color: #EDC42F;
+	background-color: #D4C17E;
 }
 
+/*.box1:hover,
+.box2:hover,
+.box6:hover,
+.box3:hover,
+.box4:hover,
+#intro:hover,
 .box5:hover,
 .box7:hover {
-	background-color: #242331;
-}
+
+}*/
+
 
 .photo-slider {
 	width: 40%;
