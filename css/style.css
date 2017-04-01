@@ -17,22 +17,25 @@ main {
 	width: 60%;
 }
 
-.content-wrapper h2 {
-	font-family: 'Great Vibes', cursive;
-	font-size: 2.5em;
-	margin-bottom: 0;
+/*.content-wrapper h2 {
+	font-size: 1.8em;
+}*/
+
+.content-wrapper h4 {
+	margin: 5px 0;
 }
 
 #intro {
 	flex: 2 0 66.66666%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
 	min-height: 150px;
 	min-width: 150px;
-	padding: 0 20px;
 }
 
 #intro button {
 	box-sizing: border-box;
-	padding: 10px 15px;
 	background-color: transparent;
 	border: 2px solid #FFF;
 	color: #FFF;
@@ -40,7 +43,6 @@ main {
 
 #intro button:hover {
 	background-color: #242331;
-
 }
 
 #intro img {
@@ -55,10 +57,13 @@ article a {
 
 .box {
 	flex: 1 0 33.333333%;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*text-align: center;*/
 	min-height: 150px;
 	min-width: 150px;
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 	background-color: #EDC42F;
 }
 
@@ -111,7 +116,7 @@ article a {
 	width: 40%;
 	min-width: 250px;
 	height: 100vh;
-	background: url(../images/profile-photo.jpg) no-repeat;
+	background: url(../images/tiger-drinking.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -134,4 +139,35 @@ article a {
 
 .elipsis img {
 	width: 50px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	main {
+		flex-direction: column;
+		flex-flow: column-reverse;
+	}
+
+	.content-wrapper {
+		width: 100%;
+	}
+
+	.photo-slider {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.content-wrapper h2 {
+		font-size: 1.5em;
+	}
+
+	.box {
+		flex: 1 0 50%;
+		min-height: 150px;
+		min-width: 150px;
+		padding-top: 30px;
+	}
 }
