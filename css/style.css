@@ -62,16 +62,22 @@ article a {
 	color: white;
 }
 
+.svg-color {
+	fill: #FFF;
+}
+
+button:hover .svg-color {
+	fill: #40dd74;
+}
+
 .box {
 	flex: 1 0 33.333333%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*text-align: center;*/
 	min-height: 150px;
 	min-width: 150px;
 }
-
 
 .box:hover {
 	background-color: #000;
@@ -116,7 +122,6 @@ article a {
 .arrows {
 	display: flex;
 	justify-content: space-between;
-	/*align-items: center;*/
 	height: 100vh;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -199,7 +204,7 @@ article a {
 
 	.elipsis {
 		margin-right: 5%;
-	  margin-left: 90%;	
+	  margin-left: 90%;
 	}
 
 	.elipsis img {
