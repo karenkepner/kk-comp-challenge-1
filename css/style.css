@@ -29,6 +29,8 @@ main {
 	flex: 2 0 66.66666%;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 	padding: 20px;
 	min-height: 150px;
 	min-width: 150px;
@@ -50,7 +52,6 @@ main {
 }
 
 article a {
-	padding-top: 20px;
 	text-decoration: none;
 	color: white;
 }
@@ -60,14 +61,13 @@ article a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*text-align: center;*/
+	text-align: center;
 	min-height: 150px;
 	min-width: 150px;
-	/*padding-top: 60px;*/
 	background-color: #EDC42F;
 }
 
-#intro:hover,
+
 .box:hover {
 	background-color: #000;
 	color: #FFF;
@@ -169,5 +169,9 @@ article a {
 		min-height: 150px;
 		min-width: 150px;
 		padding-top: 30px;
+	}
+
+	.box7 {
+		background-color: #8B745A;
 	}
 }
