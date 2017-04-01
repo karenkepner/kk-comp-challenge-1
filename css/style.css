@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	/*max-width: 900px;*/
+	/*max-width: 1600px;*/
 }
 
 main {
@@ -17,9 +17,11 @@ main {
 	width: 60%;
 }
 
-/*.content-wrapper h2 {
-	font-size: 1.8em;
-}*/
+.content-wrapper h2 {
+	font-size: 2.5em;
+	margin: 0;
+	color: #FFF;
+}
 
 .content-wrapper h4 {
 	margin: 5px 0;
@@ -45,6 +47,8 @@ main {
 
 #intro button:hover {
 	background-color: #242331;
+	border: 2px solid #40dd74;
+	color: #40dd74;
 }
 
 #intro img {
@@ -52,6 +56,8 @@ main {
 }
 
 article a {
+	display: flex;
+	flex-direction: column;
 	text-decoration: none;
 	color: white;
 }
@@ -61,10 +67,9 @@ article a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	/*text-align: center;*/
 	min-height: 150px;
 	min-width: 150px;
-	background-color: #EDC42F;
 }
 
 
@@ -100,18 +105,6 @@ article a {
 	background-color: #D4C17E;
 }
 
-/*.box1:hover,
-.box2:hover,
-.box6:hover,
-.box3:hover,
-.box4:hover,
-#intro:hover,
-.box5:hover,
-.box7:hover {
-
-}*/
-
-
 .photo-slider {
 	width: 40%;
 	min-width: 250px;
@@ -123,9 +116,10 @@ article a {
 .arrows {
 	display: flex;
 	justify-content: space-between;
-	width: 96%;
+	/*align-items: center;*/
 	height: 100vh;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .chevron {
@@ -133,8 +127,9 @@ article a {
 }
 
 .elipsis {
-	float: right;
-	padding-right: 15px;
+	position: absolute;
+	margin-right: 2%;
+  margin-left: 35%;
 }
 
 .elipsis img {
@@ -142,7 +137,7 @@ article a {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1080px) {
 
 	main {
 		flex-direction: column;
@@ -150,15 +145,35 @@ article a {
 	}
 
 	.content-wrapper {
+		height: 70vh;
 		width: 100%;
 	}
 
 	.photo-slider {
+		height: 30vh;
 		width: 100%;
+		background: url(../images/tiger-close.png) no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-color: #FFF;
+	}
+
+	.elipsis {
+		margin-right: 2%;
+	  margin-left: 91%;
+	}
+
+	.arrows {
+		height: 30vh;
+		padding: 0 5px;
 	}
 }
 
 @media screen and (max-width: 600px) {
+
+	.content-wrapper {
+		height: 80vh;
+	}
 
 	.content-wrapper h2 {
 		font-size: 1.5em;
@@ -168,10 +183,31 @@ article a {
 		flex: 1 0 50%;
 		min-height: 150px;
 		min-width: 150px;
-		padding-top: 30px;
 	}
 
 	.box7 {
 		background-color: #8B745A;
+	}
+
+	.arrows {
+		height: 20vh;
+	}
+
+	.chevron {
+		width: 20px;
+	}
+
+	.elipsis {
+		margin-right: 5%;
+	  margin-left: 90%;	
+	}
+
+	.elipsis img {
+		width: 30px;
+		/*margin-left: 90%;*/
+	}
+
+	.photo-slider {
+		height: 20vh;
 	}
 }
