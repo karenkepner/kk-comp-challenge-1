@@ -39,8 +39,14 @@ main {
 }
 
 #intro button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	box-sizing: border-box;
+	width: 60%;
 	background-color: transparent;
+	margin-right: 10px;
+	padding: 5px 10px;
 	border: 2px solid #FFF;
 	color: #FFF;
 }
@@ -51,9 +57,20 @@ main {
 	color: #40dd74;
 }
 
-#intro img {
-	width: 20px;
+#intro h4 {
+	margin-left: 5px;
 }
+
+#intro svg {
+	margin-bottom: 5px;
+}
+
+.buttons {
+	display: flex;
+	width: 60%;
+}
+
+
 
 article a {
 	display: flex;
