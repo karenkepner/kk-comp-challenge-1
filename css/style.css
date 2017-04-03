@@ -25,6 +25,7 @@ main {
 
 .content-wrapper h4 {
 	margin: 5px 0;
+	/*font-size: 1.25em;*/
 }
 
 #intro {
@@ -43,16 +44,15 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
-	width: 60%;
 	background-color: transparent;
 	margin-right: 10px;
 	padding: 5px 10px;
 	border: 2px solid #FFF;
+	font-family: 'Roboto', sans-serif;
 	color: #FFF;
 }
 
 #intro button:hover {
-	background-color: #242331;
 	border: 2px solid #40dd74;
 	color: #40dd74;
 }
@@ -70,7 +70,80 @@ main {
 	width: 60%;
 }
 
+.icon-container {
+	height: 80px;
+	width: 80px;
+}
 
+.lion {
+	background: url(../images/lion.svg) no-repeat;
+	background-size: cover;
+}
+
+#lions:hover .lion {
+	background: url(../images/lion-green.svg) no-repeat;
+	background-size: cover;
+}
+
+.lynx {
+	background: url(../images/lynx.svg) no-repeat;
+	background-size: cover;
+}
+
+#lynx:hover .lynx {
+	background: url(../images/lynx-green.svg) no-repeat;
+	background-size: cover;
+}
+
+.tiger {
+	background: url(../images/tiger.svg) no-repeat;
+	background-size: cover;
+}
+
+#tiger:hover .tiger {
+	background: url(../images/tiger-green.svg) no-repeat;
+	background-size: cover;
+}
+
+.bear {
+	background: url(../images/bear-ly.svg) no-repeat;
+	background-size: cover;
+}
+
+#bear:hover .bear {
+	background: url(../images/bear-green.svg) no-repeat;
+	background-size: cover;
+}
+
+.wolf {
+	background: url(../images/wolf.svg) no-repeat;
+	background-size: cover;
+}
+
+#wolf:hover .wolf {
+	background: url(../images/wolf-green.svg) no-repeat;
+	background-size: cover;
+}
+
+.camels {
+	background: url(../images/camel.svg) no-repeat;
+	background-size: cover;
+}
+
+#camels:hover .camels {
+	background: url(../images/camel-green.svg) no-repeat;
+	background-size: cover;
+}
+
+.mtn-lion {
+	background: url(../images/savannah-cat.svg) no-repeat;
+	background-size: cover;
+}
+
+#mtn-lion:hover .mtn-lion {
+	background: url(../images/mtnlion-green.svg) no-repeat;
+	background-size: cover;
+}
 
 article a {
 	display: flex;
@@ -96,13 +169,12 @@ button:hover .svg-color {
 	min-width: 150px;
 }
 
-.box:hover {
-	background-color: #000;
-	color: #FFF;
-}
-
 .box h4 {
 	margin: auto;
+}
+
+.box:hover h4 {
+	color: #40dd74;
 }
 
 .box1 {
